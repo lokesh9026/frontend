@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.shoes{
+    margin-top: 3%;
+
+}
+.justify-content-end {
+    background-color:lightblue
+}
+
+.shoes2
+{font-family: 'Zen Antique Soft', serif;
+
+text-align: center;
+color: black;
+}
+
+.new{
+    font-family: 'Zen Antique Soft', serif;
+}
+.new h3:hover {
+  
+    font-size: 45px;
+    color: yellowgreen;
+   
+  }
+img:hover {
+    size: 500px;
+    border: greens;
+    
+}
+a.nav-link.active {
+    font-size: 24px;
+    font-family: ui-monospace;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li.nav-item.dropdown {
+    padding-top: 10px;}
+
+.container a:hover {
+    transition: box-shadow 1s;
+    margin: 10px;
+    
+   
+}
+
+.main{
+    background-color: rosybrown;
+    background-size:cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100;
+
+}
+
+.card:hover{
+    box-shadow: 10px 10px 50px  rgba(0,0,0,0.75);
+
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+transition: 0.5s;
+transform: translateY(5%);
+}
+
+h1 {
+    font-weight: 700;
+}
+.offer{
+    background-color:rgb(229 170 170);;
+ margin-top: 820px0px;
+ padding: 30px 0;
+
+}
+
+.col-2 .offer-img{
+    padding:50px ;
+}
+.col-2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.col-2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin: initial;
+    
+}
+.testimonial{
+    padding: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial{
+    padding: 75px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.testimonial .col-3:hover{
+  transform: translateY(-10px);
+}
+
+
+
+
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+.brands{
+    margin: -18px auto;
+}
+
+.col-3 img{
+    
+    size: 60px;
+    cursor: pointer;
+    filter:grayscale(100%);
+    margin-left: 90px;
+     height: 70px;
+    width: 115px !important;
+
+
+
+
+}
+.col-3 img:hover{
+    filter:  grayscale(0);
+}
+
+.footers{
+    background: rgb(2, 1, 1);
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 20px 0 ;
+    margin-top: 30px;
+}
+.col-6 h3{
+    
+        font-size: 20px;
+        margin-left: 15px;
+    
+}
