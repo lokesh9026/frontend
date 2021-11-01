@@ -1,0 +1,33 @@
+.row form{
+    margin-left: 380px;
+
+}
+
+input{
+    width: 285px;
+   
+    height: 54px;
+}
+
+#screen
+    {
+        width: 292px;
+        margin-left: 419px;
+    
+}
+
+button{
+    border-radius: 20px;
+    font-size: 40px;
+    background: #978fa0;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+}
+
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+    margin-left: 422px;
+}
