@@ -1,0 +1,39 @@
+
+* {
+    box-sizing: 0;
+    padding: 0%;
+    margin: 0%;
+}
+.navbar {
+    background-color: aqua;
+    text-align: right;
+    border: 3px solid darkslateblue;
+}
+
+.collapse {
+margin-left: 998px;
+}
+
+.intro{
+    
+    font-family: 'Zen Antique Soft', serif;
+}
+
+h5 {
+    font-size: 16px !important;
+}
+a:hover {
+  
+    font-size: 15px;
+    color: yellowgreen;
+    background-color: rgb(10, 198, 223);
+  }
+
+  footer {
+    background-color: grey;
+    padding-top: 12px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 5px;
+}
