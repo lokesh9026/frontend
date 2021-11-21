@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+</head>
+
+<body>
+
+        <form action="" onsubmit="return validation() ">
+          <h5 style="text-align: center; font-family:  inherit; margin-top: 10px;font-size: 25px;">Registration Form</h5>
+      
+          <div class="container-fluid bg-danger "style="margin-top: 30px;" style="color:blue;" >
+            <h5 style="padding-top: 9px;">Personal Details </h5>
+          </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="" class="form-label">Application No.</label>
+              <input type="text" name="apn" id="apn" class="form-control">
+              <span id="sapn" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+                <label for="" class="form-label">Student Name</label>
+                <input type="text" id="s" name="s" class="form-control">
+                <span id="ss" class="text-danger font-weight-bold"></span>
+              </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <input type="text" id="email" name="email" class="form-control" >
+                <span id="semail" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>  
+        </div>
+
+   
+        <div class="row">
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Contact Number</label>
+              <input type="text" name="cnum" id="cnum"  class="form-control">
+              <span id="scnum" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Date of Birth</label>
+                <input type="date" name="dob" id="dob" class="form-control"aria-describedby="emailHelp">
+                <span id="sdob" class="text-danger font-weight-bold"></span>
+              </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Gender</label>
+                <select class="form-select" aria-label="Default select example" name="gname" id="gname">
+                <option selected>select</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                             
+              </select>
+              <span id="sgen" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>  
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Aadhar No.</label>
+              <input type="text" name="adhar" id="adhar" class="form-control" aria-describedby="emailHelp">
+              <span id="sadhar" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Father Name</label>
+                <input type="text" name="fname" id="fname" class="form-control"  aria-describedby="emailHelp">
+                <span id="sfname" class="text-danger font-weight-bold"></span>
+              </div>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Mother Name</label>
+                <input type="text" name="mname" id="mname" class="form-control" >
+                <span id="smname" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>  
+        </div>
+
+
+        <div class="row">
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Category</label>
+              <input type="text" name="catname" id="catname" class="form-control" aria-describedby="emailHelp">
+              <span id="scatname" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>
+          <div class="col-4">
+            <label for="exampleInputEmail1" class="form-label">Religion</label>
+            
+            <select class="form-select" aria-label="Default select example" id="rname" name="rname">
+              <option selected>Hindu</option>
+              <option value="1">Muslim</option>
+              <option value="2">Christian</option>
+            
+            </select>
+            <span id="srname" class="text-danger font-weight-bold"></span>
+          </div>
+          <div class="col-4">
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nationality</label>
+                <input type="text" name="nat" id="nat" class="form-control" >
+                <span id="snat" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>  
+        </div>
+
+        <div class="container-fluid bg-danger" >
+          <h5 style="padding-top: 9px;">Address Details </h5>
+        </div>
+
+
+        <div class="row">
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Address</label>
+              <input type="text" name="add" id="add" class="form-control" aria-describedby="emailHelp">
+              <span id="sadd" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">State</label>
+              <select class="form-select" id="state" aria-label="Default select example" name="state">
+              <option selected>select</option>
+              <option value="1">Rajasthan</option>
+              <option value="2">Gujarat</option>
+            
+            </select>
+            <span id="sstate" class="text-danger font-weight-bold"></span>
+              </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">city</label>
+                <input type="text" name="city" id="city" class="form-control" >
+                <span id="scity" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>  
+          <div class="col-6">
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Pincode</label>
+                <input type="text" name="pin" class="form-control" id="pin">
+                <span id="spin" class="text-danger font-weight-bold"></span>
+            </div>
+          </div>  
+
+        </div>
+    </div>
+</div>
+
+         <div class="container-fluid bg-danger" >
+          <h5 style="padding-top: 9px;">Course Details</h5>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Discipline</label>
+              <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+          </div>
+
+         
+            <div class="col-4">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Programme</label>
+                <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+
+              <div class="col-4">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Specialization</label>
+                  <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+              <div class="container-fluid bg-danger" >
+                <h5 style="padding-top: 9px;">Education Details</h5>
+              </div>
+              <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-2">
+                        <h5>10th</h5>
+                    </div>
+          
+
+
+
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Status</label>
+                <select class="form-select" aria-label="Default select example" name="option">
+                <option selected>select</option>
+                <option value="1">Passed</option>
+                          
+                </select>
+              </div>
+            </div>
+          
+
+   
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Board</label>
+                <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+         
+
+     
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Percentage</label>
+                <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Year</label>
+                <input type="number" max="2021" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Subjects</label>
+                <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+
+          </div>
+
+     
+
+
+                 <div class="row">
+                    <div class="col-2">
+                        <h5>12th</h5>
+                    </div>
+          
+
+
+
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Status</label>
+                <select class="form-select" aria-label="Default select example" name="option">
+                <option selected>select</option>
+                <option value="1">Passed</option>
+                          
+                </select>
+              </div>
+            </div>
+          
+
+   
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Board</label>
+                <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+         
+
+     
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Percentage</label>
+                <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Year</label>
+                <input type="number" max="2021" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Subjects</label>
+                <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row">
+            <div class="col-2">
+                <h5>UG</h5>
+            </div>
+  
+    <div class="col-2">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Status</label>
+        <select class="form-select" aria-label="Default select example" name="option">
+        <option selected>select</option>
+        <option value="1">Passed</option>
+                  
+        </select>
+      </div>
+    </div>
+  
+
+
+    <div class="col-2">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Board</label>
+        <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+    </div>
+ 
+
+
+    <div class="col-2">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Percentage</label>
+        <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Year</label>
+        <input type="number" max="2021" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Subjects</label>
+        <input type="text" name="adhar" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+    </div> 
+
+  </div>
+
+        </div> 
+        <br>
+        <input type="submit" name="submit" value="Submit" class="btn btn-danger"  >
+
+          </form>
+
+
+<script src="js.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
